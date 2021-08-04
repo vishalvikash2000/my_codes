@@ -1,3 +1,11 @@
+#SMS FROM SMS BOMBER
+ #victim phone number must be registered in flipkart website else 
+#this sms bomber would not work properly.
+#thankyou
+#developer: vishal vikash { tkinter projects india }
+
+
+
 from tkinter import*
 from tkinter import messagebox
 from selenium import webdriver
