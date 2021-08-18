@@ -6,7 +6,8 @@ root = Tk()
 root.geometry('900x650+100+0')
 root.resizable(0,0)
 
-
+def exit():
+  root.destroy()
 
 def save():
     IDE = txt.get('0.1','end-1c')
@@ -33,7 +34,7 @@ root.config(menu=my_menu,)
 file_menu= Menu(my_menu,tearoff=0)
 my_menu.add_cascade(label="File", menu=file_menu)
 file_menu.add_command(label="New...",command=save)
-file_menu.add_command(label="Exit",)
+file_menu.add_command(label="Exit",command=exit)
 
 
 root.mainloop()
