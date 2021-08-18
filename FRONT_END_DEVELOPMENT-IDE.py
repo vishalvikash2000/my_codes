@@ -20,7 +20,7 @@ def save():
         data.write(IDE)
     #-----------------------------------------------------------------------------
     
-    #------------------os.path.join will show you the files path which you've saved.for example:- c://file//user//tkinter.html------------------
+    #------------------os.path.join will show you the files path which you've saved.for example:- c://file//user//xyz.html------------------
         x = os.path.join(files) 
     #-----------------------------------------------------------------------------
     
