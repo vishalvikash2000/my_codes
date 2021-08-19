@@ -6,6 +6,7 @@ from tkinter.filedialog import asksaveasfilename
 import os
 import webbrowser
 root = Tk()
+root.title('WEBDEVELOPMENT IDE {TKINTER PROJECTS INDIA}')
 root.geometry('900x650+100+0')
 root.resizable(0,0)
 
@@ -41,7 +42,7 @@ webdv = Label(root,text="HTML . CSS . JS . JQUERY . BOOTSTRAP",font="arial 12 bo
 webdv.place(x=300,y=70)
 
 txt = Text(root,font='arial 18 bold',yscrollcommand = scroll.set)
-txt.place(x=0,y=90,width=880,height=1300)
+txt.place(x=0,y=90,width=880,height=650)
 scroll.config(command=txt.yview)
 
 my_menu = Menu(root)
