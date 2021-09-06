@@ -29,10 +29,10 @@ def movie():
 entry = Entry(root,font="arial 18 bold",)
 entry.place(x=30,y=380,width=450)
 
-btn = Button(root,text="x",bg="white",fg="red",font="aral 11 bold",bd=0,command=clr)
+btn = Button(root,text="x",bg="white",fg="red",font="arial 11 bold",bd=0,command=clr)
 btn.place(x=450,y=383)
 
-search = Button(root,text="SEARCH MOVIE",bg="white",fg="red",font="aral 18 bold",bd=0,command=movie)
+search = Button(root,text="SEARCH MOVIE",bg="white",fg="red",font="arial 18 bold",bd=0,command=movie)
 search.place(x=150,y=420)
 root.mainloop()
 
