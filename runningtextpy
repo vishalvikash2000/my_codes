@@ -1,0 +1,25 @@
+from tkinter import*
+root = Tk()
+root.geometry("750x480")
+root.configure(bg="black")
+root.title("TEXT AUTO RUNNER")
+ 
+slideword = " "
+count = 0
+ 
+def slidetxt():
+    global slideword,count
+    text=" \U0001F921 HELLO WORLD \U0001F921 \n\n Gui App name: text auto runner \n\n "
+    if (count) >= len(text):
+        count = 0
+        slideword = " "
+    slideword += text[count]
+    count += 1
+    txt.configure(text=slideword)
+    txt.after(300,slidetxt)
+ 
+txt = Label(root,text=" ",font="arial 28 bold",bg="black",fg="red")
+txt.place(x=0,y=10)
+ 
+slidetxt()
+root.mainloop()
