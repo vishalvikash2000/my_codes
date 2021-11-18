@@ -22,8 +22,8 @@ def clr():
     entry.delete(0,END)
 
 def movie():
-    en = entry.get()
-    webbrowser.open(f"https://sflix.to/search/{en}")
+    en = entry.get().replace(" ","-")
+    webbrowser.open(f"https://ww3.series9.ac/movie/search/{en}")
 
 
 entry = Entry(root,font="arial 18 bold",)
