@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script>
+$(document).ready(function(){
+  $("#myInput").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#myTable tr").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+</script>
+<style>
+body{
+   background-color: white;
+}
+td, th {
+  border: 1px solid black;
+  border-radius: 10px;
+  text-align: left;
+  padding: 8px;
+  background-color: rgb(238, 130, 238);
+  color: white;
+  font-weight: bold;
+}
+
+td:hover, th:hover {
+     color: grey;
+     border-width: medium;
+}
+
+tr:nth-child(even) {
+  background-color: white;
+}
+
+input[type="text"]{
+     position: absolute;
+     top: 200px; 
+     left: 250px;
+     width: 800px;
+     height:50px;
+}
+
+input[type="text"]:focus{
+     border: 3px solid rgb(238, 130, 238); 
+
+}
+::placeholder{
+      text-align: center;
+      color: rgb(238, 130, 238);
+      
+}
+
+h1{
+  text-align: center;
+  color: rgb(238, 130, 238);
+  font-size: 40px;
+  text-decoration: underline;
+}
+</style>
+</head>
+<body>
+
+<h1>Daily News Updates</h1>
+<input id="myInput" type="text" placeholder="Search..">
+<br><br>
+
+<table>
+  
+  <tbody id="myTable" style="position: absolute;top: 300px; left: 200px;">
+  <tr>
+    <td>
+<a jsname="YKoRaf" class="WlydOe" href="https://www.ndtv.com/india-news/sharad-pawar-announces-praful-patel-supriya-sule-ncp-working-presidents-4109917" data-ved="2ahUKEwja2bPs4bj_AhWdpFYBHXteAdEQvOMEKAB6BAgNEAE" ping="/url?sa=t&amp;source=web&amp;rct=j&amp;url=https://www.ndtv.com/india-news/sharad-pawar-announces-praful-patel-supriya-sule-ncp-working-presidents-4109917&amp;ved=2ahUKEwja2bPs4bj_AhWdpFYBHXteAdEQvOMEKAB6BAgNEAE"><div class="vJOb1e Pw4Ldf RsCEN akVW1d"><div class="FAkayc"><div class="YEMaTe JFSfwc" style="background-color:#191419;height:92px;width:92px"><div class="uhHOwf BYbUcd" style="height:92px;width:92px"><img alt="" id="dimg_6" src="data:image/jpeg;base64,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" data-atf="1" data-frt="0"></div><div class="OIL2le"><span class="qB1pae"></span></div></div></div><div class="iRPxbe"><div class="MgUUmf NUnG9d"><g-img class="sL0zmc">
+
+<br>
+<img id="dimg_19" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFMAAAAQCAMAAABdoLPwAAAAilBMVEX///8jHyAAAAAHAAC4t7e+vr77+/oWEBJ7eXoLAASmpqa1tLXX19fp6ekgHB0AHyDNzMz5HCTtHCQRCgz19fXo8fHL09PuREnlQkfg4OAaFRbtFh9FQkNST1BaWFl0cnOfnZ5nZWU5NjeFg4QrJyiJGB1vGR2Qj48RHyBnHiEZHyDeHCTCHSOUHiIHRJgRAAABoElEQVQ4jZWUiW7CMAyGnYS2lPSCdkcDK+eAXe//erOd9Aqd1P0SkmPLH3biGiDVC1SQglOBZ11Z7wxpGIgdIUAgFUrKxlH3eJZpwd4ZkoceSSh5ZEOwIpVwYBkJQUwxT5msOuYpo9SWmdGvrDwmVu9EcRFbW5Hd+8tli9SYU57BMbNT2UWZ+fSMXrWA0CrZYTjWfASNUJnYEBUja8fMsrZqYsar6tLWjcz8/eX1ehdy0XVVUwk3V45l2kdBv2msvUK/OkDPBGo2WjLz/rPebtcfnwNmpVzUY8LO4KEgK8RWsxKGTBtNiZl/bTab7Xc+h5nwzZF1i9Gtx8y20P8xYU/Xj+kVwS8wZsKbLbTt/er3bp/UZ6bEUiGcS/QGPpMKNW9wdm+U+28UH6aY3HN5ozLNDnwmNFioETy47SxZhTX3kEwywWBC1HRvNWbWPP003g8zb7iFaSbNkzD9TI2YGDX2g5v4NiOV/sHkiRGD2Xcfvruq4mRXx8MOkfLYLS5NCUNmYrfQvvfQVtPdX9R2gfm7rugXBdS8DAdMCGxOe/wFj8UalcNs900AAAAASUVORK5CYII=" class="YQ4gaf zr758c wA1Bge" height="16" width="83" alt="NDTV.com" data-atf="1" data-frt="0"></g-img></div><div class="n0jPhd ynAwRc tNxQIb nDgy9d" aria-level="3" role="heading" style="-webkit-line-clamp:3"><div class="OSrXXb rbYSKb LfVVr" style="bottom:12px"><span><br>3 hours ago</span></div></div></div></a>
+
+
+
+</td>
+    <td>Sharad Pawar Names Praful Patel, Supriya Sule NCP Working Presidents</td>
+  </tr>
+  <tr>
+    <td>
+
+<a jsname="YKoRaf" class="WlydOe" data-ved="2ahUKEwja2bPs4bj_AhWdpFYBHXteAdEQvOMEKAB6BAgPEAE" ping="/url?sa=t&amp;source=web&amp;rct=j&amp;url=https://www.thehindu.com/news/national/other-states/centre-sets-up-committee-in-manipur-under-governor-to-facilitate-peace-making-process/article66953641.ece&amp;ved=2ahUKEwja2bPs4bj_AhWdpFYBHXteAdEQvOMEKAB6BAgPEAE"><div class="vJOb1e Pw4Ldf RsCEN gpFCcc"><div class="FAkayc"><div class="YEMaTe JFSfwc" style="background-color:#7b716a;height:92px;width:92px"><div class="uhHOwf BYbUcd" style="height:92px;width:92px">
+
+<img alt="" id="dimg_23" src="data:image/jpeg;base64,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" data-atf="1" data-frt="0"></div></div></div><div class="iRPxbe"><div class="MgUUmf NUnG9d">
+
+<br>
+<g-img class="sL0zmc"><img id="dimg_25" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJwAAAAPCAMAAAAmlFaSAAAAb1BMVEX///8AAADOzc3r6+vy8vLT09MEAADu7u78/PzAv7/Ix8gbFhcJAAD29vbR0NGRkJC0s7R2dHWjoqOCgIE/Ozzh4OFLSEllY2NubW1qaGmura00MDG6uboQCAvZ2dmamJlST1BZV1gtKSqKiIkiHR7xO1xuAAAD6ElEQVRIiZ2ViXLrKgyGWWMgscHYeCEY4pD3f8YjcLqkvW1nLtOJK6T8fJaIhJBQRJGuI/CpGCcc/hCK8Ow6xrpiKwIL/bDanxxVqmuRK1KEttWOcAKh1V+0FXX1AEWcKHuOdCUWCaeAiIE63qXb8e7MiCldtlNyCFFzOU+ubd2+jTyq/LiKVyTGyoO2jDP63HuNQDRdtoUKRDk+3zkTrt8uibaux7f6Qm1csW0bdd76GO2+e/g+lZfz1TEkaLiOHMLYBJHrZUGouTNEMK7HsvvJlqfFY5GKt+fRraosehwqgPFe8membAovdAzjI9/jpQbLDZfvtnhbn/iVcjzpYvR4B6udLvlwal81bIXrCwkFuK0pu831Ha7C2rakhpA2aAJZeMwScqJNoCxILyGgm+Z92Gft3VsGG3w64KYn3LnCofvjDaA/0Cuc2HEvCpw+fNLUXJQ3X08lkLMf4FoB9XFaNsHL7G0czoY4pqOIUkIqNVRiWpfOmXla9yH+Dtcvl3NNCxo+wSGPz90nOGXeS7BUOFgAd5T1+rmsBq4hCt5SloLMOd0mrZBJIvSc2x5JT6MRTlC3rGYYifsVLqPbhtU3OHbZ9J9w587B6j7unHN+LKou62ySDdKaee4VkgM1DY2CcJ+cJUE4Q/rpNo2eHsnHmylSbtpe4Abkxu0av8Fdt/lvOCNhmfvlgDtdrU/3quqU0cFnY5TstQQ4bhXvhFQ2OWJMTFb2t36+7Yk/4VKRUuNXONQ9tmvzFW7c9v9fVlitNDxPNujsEyKDS0aakIi1lJoIek3J3OSJ+a2sxZDbtrNvcMvfcF9/EABHKzBcfwPp6/vOW66jnWOSneJW2t6BSzpEp3le74H4v+BQwqcB5Re4M/afWon86Eu/wVUwBOd50jgipR1UJNYokr03ebDBJEOhp1MVGOFZShcN/wsOaYz1C5zCV4favTTcevDHTPoNrioSi8QQqWGhkxY1iiyh85C3yLmE8UQDG5KLsYNxZJ2KRYP9ADcfA2LftmdZKyP0OVuZ7wfI8D5w2hvej/8MxvV+NRvOxwtupfhuDEhwpqzjylAZjIXJ4F0AixhqgtQmLcwx41MaNKk1iRgf9+ZxmmvuMeZ1+0BuJlzh7pcyKOh6rsmgE0617PKJJtQwr3NWAjG/rnMPkjLDDlxzu87rklOeR46gAyttswm9tHZJKSTvBx6zDxqmWFTWyCH7odfLWiRMP6+rh7auQSpF5heQDkL1c++PKT9BPbvi7XUe/HF7YGDti06ZvxdVvH+KD/NlCSY+RzgYCU1RExRGh2hroVhTDESh90X2Veo/NBFjb85Xb0Ofjn+MwFBiQpmMHAAAAABJRU5ErkJggg==" class="YQ4gaf zr758c wA1Bge" height="15" width="160" alt="The Hindu" data-atf="1" data-frt="0">
+<br></g-img></div><div class="n0jPhd ynAwRc tNxQIb nDgy9d" aria-level="3" role="heading" style="-webkit-line-clamp:3">
+</div><div class="OSrXXb rbYSKb LfVVr" style="bottom:12px"><span><br><br>4 hours ago</span></div></div></div></a>
+
+
+</td>
+    <td>Centre sets up Committee in Manipur under Governor to facilitate 
+peace-making process</td>
+  </tr>
+  <tr>
+    <td>
+
+<a jsname="YKoRaf" class="WlydOe" href="https://www.indiatoday.in/world/story/donald-trump-classified-documents-probe-charges-keeping-files-in-shower-bedroom-destroying-2391160-2023-06-10" data-ved="2ahUKEwiRoeWn7bj_AhUHamwGHR9aAGYQvOMEKAB6BAgPEAE" ping="/url?sa=t&amp;source=web&amp;rct=j&amp;url=https://www.indiatoday.in/world/story/donald-trump-classified-documents-probe-charges-keeping-files-in-shower-bedroom-destroying-2391160-2023-06-10&amp;ved=2ahUKEwiRoeWn7bj_AhUHamwGHR9aAGYQvOMEKAB6BAgPEAE"><div class="vJOb1e Pw4Ldf RsCEN gpFCcc"><div class="FAkayc"><div class="YEMaTe JFSfwc" style="background-color:#5e503c;height:92px;width:92px"><div class="uhHOwf BYbUcd" style="height:92px;width:92px"><img alt="" id="dimg_7" src="data:image/jpeg;base64,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" data-atf="1" data-frt="0"></div></div></div><div class="iRPxbe"><div class="MgUUmf NUnG9d"><g-img class="sL0zmc">
+<br>
+<img id="dimg_14" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKAAAAAQCAMAAACm24RqAAAAbFBMVEX////LAADMAADPHyXpqqvTOD3/+/vvx8jjkZPtubrNAAvOFBz02tr++Pj66urZX2LVSEzvwsPmnJ7yzs/opaf88fHNBRHhg4Xdd3nll5nSMzjiiozWTlL11tfssrP45OXRKi/YWFvUP0PbaGsD4mPWAAACLUlEQVRIic2W2ZKkIBBFMxMsC3BDEbUUl6r//8dJqKV7IqbfjJi+D4IKxolcLgIkVVbZCn6tioNQa1rC/wb5QRKNiDLY/m+Uf8qieAvX+MCt4KTlSe62zkmpYvKVK/kq0wLoi6jQQ2llzvcb3/XPrxUFPOfx9SkqjTDeeG+MF4IiBe4X0rgBDGhnjFp6aJAxA2KqVIVIhNi5+JIUjHHMImqJWFq8xaXiHD5w2ozr4uSwtFr4KQJmF54dADPmV5o6eacdjoj28H6OezZl9c2qCcUanMcw0+RGQo56q3ULD5SQ4VkVfRjdWhVoc1VmzP0JSPcDVQLkAWAhGwErrG/68txGGYAgDjPk+JgjfUccOLHcDJRetDifxAe7yMZhHGQzZ6PY6QWYVWi+AFe81sxwxW7i4LwBe2zS1N+GWBBcBVzPyvEORXo/iw/2bGvVmk9qXm1u3oA3LsB5+gKcIiDtZUH7j4B35FBXgTgLNXWnAdakxnms9jxsw+CbD+CFy5DeKcb8wH7VnshQ/gZ8pdh+Utxs5BE9Be6a7TRASSNNU+2Ouhkb3X4AOU9GxybJZcNBWbC/62GeR318ANdXkxSvJin4S1Je6XEqYOmNYJNhm2FR9C62meQRfL68bKa+cIGtz4wyTxzSiva7zdxDz3XLMtiPz0XnSH0z6tQByah5rNx3o5bKJePIXSqvkAj+NuoqJJfcQrWFy3mAv/6oSz8LpOn3/iyw+k7lJx2dJ+sPHGYj3mShXzIAAAAASUVORK5CYII=" class="YQ4gaf zr758c wA1Bge" height="16" width="160" alt="India Today" data-atf="1" data-frt="0"></g-img></div><div class="n0jPhd ynAwRc tNxQIb nDgy9d" aria-level="3" role="heading" style="-webkit-line-clamp:3"> 
+</div><div class="OSrXXb rbYSKb LfVVr" style="bottom:12px"><span><br>10 hours ago</span></div></div></div></a>
+
+</td>
+    <td>Keeping US nuclear files in shower, attempt to destroy documents: 5 charges 
+in Donald Trump indictment</td>
+  </tr>
+  <tr>
+    <td>
+  <a jsname="YKoRaf" class="WlydOe" href="https://indianexpress.com/article/political-pulse/haryana-cm-khattar-keeps-suspense-up-on-ties-with-jjp-8655810/" data-ved="2ahUKEwiCoOaK8rj_AhWfTGwGHYOzAukQvOMEKAB6BAgMEAE" ping="/url?sa=t&amp;source=web&amp;rct=j&amp;url=https://indianexpress.com/article/political-pulse/haryana-cm-khattar-keeps-suspense-up-on-ties-with-jjp-8655810/&amp;ved=2ahUKEwiCoOaK8rj_AhWfTGwGHYOzAukQvOMEKAB6BAgMEAE"><div class="vJOb1e Pw4Ldf RsCEN gpFCcc"><div class="FAkayc"><div class="YEMaTe JFSfwc" style="background-color:#edebec;height:92px;width:92px"><div class="uhHOwf BYbUcd" style="height:92px;width:92px"><img alt="" id="dimg_2" src="data:image/jpeg;base64,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" data-atf="1" data-frt="0"></div></div></div><div class="iRPxbe"><div class="MgUUmf NUnG9d"><g-img class="sL0zmc">
+<br>
+<img id="dimg_15" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKAAAAAQCAMAAACm24RqAAAAmVBMVEX///8AAAD/AACpqamsrKywsLCmpqbY2Nhqamrt7e3p6enx8fHi4uJ+fn7d3d2dnZ3Ly8tAQECTk5PCwsKGhobS0tL5+fldXV23t7dSUlIrKytFRUUJCQlwcHAfHx9YWFg2NjYXFxf+mpf/8O/+1NL+zcv+wsD9pKH/uLb+JRz/cW3+PDb/hID7397/Uk3/YV3+e3j6SEL7ratWvtlPAAAEWUlEQVRIic1W2XbbOAwFtVD7Yi2UbEeyXadp0kzamfn/j5t7QTlpkzzMmafhObZICAQuAVxQIhz3V/k4RjvFn4g/jNZOs0j+b1T/63DB121WRqG1cWxtFJWzMeUHLHjXvxNCL5fU2M8sJzbUUdrQ6tKOPUVzyQBgEie0oDo0XHbVMCuksKpscTPzEAQPflaZrobDuj6ZWszde39ZZ0ycvZeai8jZNJ8BDI0f7s4YON7hLKmXpNL5ySHHZh2LNF7iJPGSxFv5JkEQPHpfMSOSivRGRj7fjd7sP8hGWBbXfoZPog0gw3ym2wmxNocDRBZoVk4OxM1RlfgbsKgE51mguKqRx0CuT0HwBdNyr1FEMJITjgO0o3c8zr7GBtMxU1i0/nRlXKteMXKVz63krYfr+kIBdh4qXNYLY5LyrzbmCIDYuBpTHI3RtECCNANlTZAyYULx9+DpKs9B8Ae8Uu9s4KzoZW9yd9Qw12tkjZbeEQ/sK4qD2nT70wirebyaAW/TXRvtTTIezFFiw2C/AcQMG49CgC1R7LARdQnQ+XGrdiQdsSmyYtTNLsucyPXxHgl+kR9B8F0tOVSMT7eRUzEBbakWFy/LsNwVkxwwcyqEHg4Dld2Oqzs6iuMm2QAuY9s6H0KFBoAjnRBgxHBoBOcRKemhMc1OMZhz45P286cQ4T0CGVx9SV30RWKqimbxO1EKY8wM67CrYGJlPFUfpXoxTH9GjZS5iS340b3WYLaV41kU4BAC0gCA+wqT3VaDR56TY5CNLSfSOAh+yIuS5M8nBWZ9rKCzz+Fvj2T1eDKFmKYEMjmgrPBrtGRDBlVyEIDBCxHFtSPKUVFdQAk6WjakG4sPNxanjgDXw8rtzcXTWVoFzTbyJQielSSPDy8KbKELjJM/SYNj2aryHVH5c2YwK3SNiZXjWMkRotWwjwhXIGvhM/9LDeaeqAowrYZeK25YNM3sPjfeJzwISyJjFHuP8OnqnoO/No116z7qBSWPLLvb7gOiUqhnRkUnHf9TFNeecGOuLI82mtNvAOEXpY9dWoMbJaJCo7TbSBKH1mmeMSlpR8+MNkOSPH3zhoqNI7XyiP4Uh2SeP4UmF/E4QxNlWFbMLPdc8M6lXGlyO71aXgEW5OXC+vIs9gBDrmICzHzSGBwAbHTbDaB8BcLrhk9arWS+bbQHF3bPQCeV8ubAEpzZzLsat4Rk02zi1qLAuzPSNEUm7ns90d5kQ/baqJOKsGq27OU3gMkvjfpCFg9oRjuyeMGWW+ZB47/9zI1Hc0mcnmYkWjC4RelMvFSSE96hBDJeYZcKJNZSv3QZKTgwgY2560q9bc5mbd+uutnfCtjR/QrQaptpd7f7ZvHPnBcPx+vHykuwfc6UTYQWRtJFkRohT5NhoMlC30nEXW4Ak4qBbbVCQBvmsRkKXdUhayypWMpJGHGEfajC2kZxG1oflzEMeQmEYT9vWtDHx4KiykDM5u0L6fog/9fxDyqGPA7+MeIiAAAAAElFTkSuQmCC" class="YQ4gaf zr758c wA1Bge" height="16" width="160" alt="The Indian Express" data-atf="1" data-frt="0"></g-img></div><div class="n0jPhd ynAwRc tNxQIb nDgy9d" aria-level="3" role="heading" style="-webkit-line-clamp:3">
+</div><div class="OSrXXb rbYSKb LfVVr" style="bottom:12px"><span><br>5 hours ago</span></div></div></div></a>
+
+</td>
+    <td>Haryana CM Khattar keeps suspense up on ties with JJP, says all up to party state in-charge</td>
+  </tr>
+  </tbody>
+</table>
+<i class="fa fa-gears" style="font-size: 160px;position: absolute; left: -50px;color: rgb(238, 130, 238);"></i>
+<i class="fa fa-gears" style="font-size: 160px;position: absolute; left: 1178px; transform: scale(-1,1);color: rgb(238, 130, 238);"></i>
+<i class="fa fa-gears" style="font-size: 160px;position: absolute; top: 700px;left: -50px;color: rgb(238, 130, 238);"></i>
+<i class="fa fa-gears" style="font-size: 160px;position: absolute; top: 700px; left: 1178px; transform: scale(-1,1);color: rgb(238, 130, 238);"></i>
+
+</body>
+</html>
+
