@@ -1,4 +1,14 @@
-div{
+span{
     color: red;
-    font-size: 38px;
+    font-size: 130px;
+    position: relative;
+    animation-name: fadeout;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeout{
+   from{top: -80px;opacity: 0.2;}
+    to{top: 50px;color: blue;}
+    
 }
